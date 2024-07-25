@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/saved_nav_graph"
+    app:startDestination="@id/savedFragment">
+
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="uz.elmurod.main.SavedFragment"
+        android:label="SavedFragment"
+        tools:layout="@layout/fragment_saved">
+
+        <action
+            android:id="@+id/action_savedFragment_to_articlesFragment"
+            app:destination="@id/articlesFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_in_top"
+            app:popExitAnim="@anim/slide_out_bottom"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articlesFragment"
+        android:name="uz.elmurod.main.fragments.details.ArticleFragment"
+        android:label="ArticleFragment"
+        tools:layout="@layout/fragment_articles">
+
+        <argument
+            android:name="article"
+            app:argType="uz.elmurod.domain.data.ui.Articles" />
+
+    </fragment>
+</navigation>

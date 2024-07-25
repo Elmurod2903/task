@@ -1,0 +1,135 @@
+<resources>
+    <string name="action_title">All</string>
+
+    <string name="continue_text">Continue</string>
+    <string name="chat">Chat</string>
+
+    <string name="enter_number">Enter your phone number</string>
+    <string name="en">English</string>
+    <string name="attendance">Attendance</string>
+
+    <string name="language_change">Select language</string>
+
+    <string name="main">Main</string>
+    <string name="more">More</string>
+
+    <string name="orders">Orders</string>
+    <string name="search_stu">Search students</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+    <string name="phone_number_prefix">+ 998</string>
+    <string name="ru">Pусский</string>
+    <string name="negative_button">No</string>
+    <string name="passive_button">Yes</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="category">Category</string>
+    <string name="course">Course</string>
+    <string name="groups">All groups</string>
+    <string name="commit">Commit</string>
+    <string name="accept_student">Do you accept this student?</string>
+    <string name="deleteFromGroup">Do you really want to delete this group?</string>
+    <string name="text_verify_title">Confirmation code</string>
+    <string name="uz">O\'zbek</string>
+    <string name="avans">Avans</string>
+    <string name="bonus">Bonus</string>
+    <string name="fines">Fines</string>
+    <string name="income">Income</string>
+    <string name="my_income">My Income</string>
+    <string name="my_balance">Tushum</string>
+    <string name="fiksal">Fiksal</string>
+    <string name="wage">Ish haqqi</string>
+    <string name="news">News</string>
+    <string name="save">Save</string>
+    <string name="settings">Settings</string>
+    <string name="send">Send</string>
+    <string name="add_new_information">Qo‘shimcha ma‘lumot yuklash</string>
+    <string name="student_info">Talaba malumotnomasi</string>
+    <string name="test_sent">Sizning shikoyatingizni yuborishda xatolik yuz berdi…</string>
+    <string name="offer">Taklif</string>
+    <string name="complaint">Shikoyat</string>
+    <string name="your_offer">Qanday taklifingiz bor ?</string>
+    <string name="info_text">"Siz yozgan takliflar va shikoyatlar to'g'ridan-to'g'ri direktorga yetib boradi. Bunda uchinchi tomon ishtirok etmaydi. "</string>
+    <string name="support_title">Taklik va shikoyatlar</string>
+    <string name="select_branch">Filialni tanlang</string>
+    <string name="theme">Mavzu</string>
+    <string name="verify_sub_title">Enter the code that has been sent to your phone number.</string>
+
+
+    //
+    <string name="app_name">RedUz Teacher</string>
+    <string name="all">All</string>
+    <string name="attendance_check">Attendance check</string>
+    <string name="group_info">Group info</string>
+    <string name="attendance_history">Attendance history</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="date_string" formatted="true">%02d.%02d.%04d</string>
+    <string name="reasonable">Reasonable</string>
+    <string name="other_reason">Other reason</string>
+    <string name="trial_lesson">Trial lesson</string>
+    <string name="unreasonable">Unreasonable</string>
+    <string name="test_groups">4 ta</string>
+    <string name="total_groups">Jami guruhlar</string>
+    <string name="test_balance">$ 25 000</string>
+    <string name="balance">Balans</string>
+    <string name="test_date">01.12.2021 | 20:12</string>
+    <string name="test_news_desc">Ilon Musk</string>
+    <string name="test_name">Javlon</string>
+    <string name="test_number">+ 998 99 518 52 44</string>
+    <string name="select_languge">Tilni tanlang</string>
+    <string name="test_date_time">10:23</string>
+    <string name="setup_password">Parol</string>
+    <string name="setup_password_retry">Yana parol</string>
+    <string name="password">Parol</string>
+    <string name="enter_password">Davom etish uchun telefon raqamingizni kirinting</string>
+    <string name="enter_loging_password">Kirish parolinini ornatish</string>
+    <string name="menu">Menu</string>
+    <string name="welcome">Hush kelibsiz</string>
+    <string name="enter">Kirish</string>
+    <string name="call">Call</string>
+    <string name="message">Message</string>
+    <string name="test_success">Malumotlar saqlashda xatolik yuz berdi.</string>
+    <string name="test_address">Uchtepa Shirin Filiali</string>
+    <string name="support">Taklif va shikoyat</string>
+    <string name="empty" />
+    <string name="about_app">Ilova haqida</string>
+    <string name="appreciate_app">Ilovani baxolash</string>
+    <string name="branch">Filial</string>
+    <string name="share_app">Dasturni ulashish</string>
+    <string name="exit">Chiqish</string>
+    <string name="select_lang" />
+    <string name="student_name">Name</string>
+    <string name="student_surname">Surname</string>
+    <string name="error">Error</string>
+    <string name="history_title">Balans tarixi</string>
+    <string name="student_phone_number">Phone number</string>
+    <string name="student_birthday">Tugulgan sanasi</string>
+    <string name="student_fatcher">Otasi</string>
+    <string name="student_fatcher_number">Phone number</string>
+    <string name="student_mother">Onasi</string>
+    <string name="student_mother_number">Phone number</string>
+    <string name="student_university">Maqsadidage universtiteti</string>
+    <string name="my_pays">Tolovlarim</string>
+    <string name="my_rewardings">Ragbatlar</string>
+    <string name="test_sum">100.000 UZS</string>
+    <string name="delete">Ochirish</string>
+    <string name="online_lesson">Online dars</string>
+    <string name="rating">Reyting</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="no_internet_txt">  Your internet connection is currently not available please check</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="details">Details</string>
+    <string name="error_message">Error message</string>
+    <string name="retry">Retry</string>
+    <string name="news_not_found">News not found</string>
+    <string name="data_not_found">Data not found</string>
+    <string name="undo">Undo</string>
+    <string name="dayMonthYear">%s.%s.%s</string>
+    <string name="delete_article">Successfully deleted news</string>
+    <string name="save_article">News saved successfully</string>
+
+
+</resources>

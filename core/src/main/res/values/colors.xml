@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ultramarine_blue">#109CF1</color>
+    <color name="nickel">#727171</color>
+    <color name="black_alpha_25">#40000000</color>
+    <color name="black_alpha_15">#26000000</color>
+    <color name="pin_view_color_white">#40FFFFFF</color>
+    <color name="text_color_black">#000000</color>
+    <color name="text_color_black_a_60">#99000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white_a_50">#80FFFFFF</color>
+    <color name="lavender_blue">#CCC7D2FC</color>
+    <color name="unselected_icon_color">#8B90A5</color>
+    <color name="selected_icon_color">#109CF1</color>
+    <color name="background_color">#F1F2F6</color>
+    <color name="grey_color">#80CCCCCC</color>
+    <color name="text_color_black_a_50">#80000000</color>
+    <color name="text_color_black_a_30">#4D000000</color>
+    <color name="text_color_black_a_10">#1A000000</color>
+    <color name="disabled_color">#FAF6F5</color>
+    <color name="ultramarine_blue_alpha_15">#98A8E1</color>
+    <color name="green">#00A34C</color>
+    <color name="red">#EE0957</color>
+    <color name="orange">#E1BC4E</color>
+
+</resources>

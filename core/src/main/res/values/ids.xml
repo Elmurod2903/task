@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main_container" type="id" />
+
+    <item name="snackBarId" type="id" />
+    <item name="settingsIcon" type="id" />
+
+    <item name="online_lesson" type="id" />
+    <item name="rating" type="id" />
+    <item name="branchId" type="id" />
+    <item name="langId" type="id" />
+    <item name="supportId" type="id" />
+    <item name="newsId" type="id" />
+    <item name="about_app_id" type="id" />
+    <item name="appreciate_app_id" type="id" />
+    <item name="share_app_id" type="id" />
+    <item name="exitId" type="id" />
+
+    <item name="support_text_id" type="id" />
+    <item name="support_title_text_id" type="id" />
+
+    <item name="radio_button1" type="id" />
+    <item name="radio_button2" type="id" />
+
+
+    <item name="name_edt_id" type="id" />
+    <item name="surname_edt_id" type="id" />
+    <item name="phone_number_edt_id" type="id" />
+    <item name="birthday_edt_id" type="id" />
+
+
+    <item name="my_balance_count_id" type="id" />
+
+
+    <item name="uz_id" type="id" />
+    <item name="ru_id" type="id" />
+    <item name="en_id" type="id" />
+
+</resources>

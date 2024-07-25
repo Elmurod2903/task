@@ -1,0 +1,73 @@
+import uz.elmurod.newsapi.buildSrc.Libs
+import uz.elmurod.newsapi.buildSrc.Constants
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'kotlin-parcelize'
+
+android {
+    compileSdk Constants.Build.compileSdk
+//    buildTools Constants.Build.buildTools
+
+    defaultConfig {
+        minSdk Constants.App.minSdk
+        targetSdk Constants.App.targetSdk
+        versionCode Constants.App.versionCode
+        versionName Constants.App.versionName
+
+        testInstrumentationRunner Constants.App.testInstrumentationRunner
+    }
+
+    buildTypes {
+        Properties properties = new Properties()
+        if (project.rootProject.file('local.properties').canRead())
+            properties.load(new FileInputStream(project.rootProject.file('local.properties')))
+        else throw new GradleException("Could not read local.properties!")
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = Constants.Build.jvmTarget
+        freeCompilerArgs += ['-Xopt-in=kotlin.RequiresOptIn',
+                             '-Xextended-compiler-checks',
+                             '-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi',
+                             '-Xuse-experimental=kotlinx.coroutines.ObsoleteCoroutinesApi']
+    }
+    kapt {
+        generateStubs = true
+    }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding {
+            enabled = true
+        }
+    }
+}
+dependencies {
+    implementation(Libs.Kotlin.stdlib)
+    implementation(Libs.AndroidX.coreKtx)
+    implementation(Libs.AndroidX.appcompat)
+    implementation(Libs.Material.material)
+    implementation(Libs.AndroidX.Constraint.constraintLayout)
+    implementation(Libs.Hilt.daggerHilt)
+    kapt(Libs.Hilt.daggerHiltKapt)
+    implementation(Libs.coroutines)
+
+    testImplementation Libs.Tests.junit
+    androidTestImplementation Libs.Tests.junitTest
+    androidTestImplementation Libs.Tests.espresso
+
+    implementation(Libs.Coroutines.core)
+    implementation(Libs.Coroutines.android)
+
+    implementation project(Constants.Modules.core)
+}

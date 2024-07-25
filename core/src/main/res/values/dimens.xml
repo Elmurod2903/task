@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="radius_default">8dp</dimen>
+    <dimen name="elevation_low">2dp</dimen>
+    <dimen name="elevation_normal">8dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="app_bar_size">22dp</dimen>
+    <dimen name="max_peek_height">1000dp</dimen>
+    <!--text size-->
+    <dimen name="ts_default">16sp</dimen>
+
+</resources>

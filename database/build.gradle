@@ -1,0 +1,26 @@
+import uz.elmurod.newsapi.buildSrc.Constants
+import uz.elmurod.newsapi.buildSrc.Libs
+
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+apply from: "../commons.gradle"
+
+android {}
+
+dependencies {
+
+    api(Libs.Room.runtime)
+    api(Libs.Room.ktx)
+    api(Libs.Room.room_paging)
+    kapt(Libs.Room.compiler)
+    implementation(Libs.Binding.view_binding_delegate)
+    implementation(Libs.Network.moshi)
+    kapt(Libs.Network.moshiKapt)
+    implementation(Libs.Network.retrofit_moshi)
+    implementation(Libs.Paging.paging)
+    implementation project(Constants.Modules.navigation)
+    implementation project(Constants.Modules.domain)
+}

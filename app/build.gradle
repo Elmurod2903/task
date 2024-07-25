@@ -1,0 +1,48 @@
+import uz.elmurod.newsapi.buildSrc.Constants
+import uz.elmurod.newsapi.buildSrc.Libs
+
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+apply from: "../commons.gradle"
+
+android {
+    defaultConfig {
+        applicationId Constants.App.applicationId
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+}
+
+dependencies {
+
+    implementation Libs.AndroidX.coreKtx
+    implementation Libs.AndroidX.appcompat
+    implementation Libs.Material.material
+    implementation Libs.ConstraintLayout.constraintLayout
+    implementation(Libs.Navigation.navigation_ui)
+    implementation(Libs.Navigation.navigation_fragment)
+    implementation(Libs.Lifecycle.lifecycle_runtime)
+    implementation(Libs.Lifecycle.lifecycle_viewmodel)
+    implementation(Libs.fragment)
+    implementation(Libs.Binding.view_binding_delegate)
+    implementation(Libs.Glide.glide)
+    implementation(Libs.Paging.paging)
+
+
+    implementation project(Constants.Modules.core)
+    implementation project(Constants.Modules.domain)
+    implementation project(Constants.Modules.network)
+    implementation project(Constants.Modules.navigation)
+    implementation project(Constants.Modules.database)
+    implementation project(Constants.Modules.search)
+    implementation project(Constants.Modules.main)
+
+    implementation(Libs.Hilt.daggerHilt)
+    implementation 'androidx.paging:paging-common-ktx:3.1.0'
+    kapt(Libs.Hilt.daggerHiltKapt)
+}
+kapt {
+    correctErrorTypes true
+}

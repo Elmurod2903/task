@@ -1,0 +1,33 @@
+import uz.elmurod.newsapi.buildSrc.Libs
+import uz.elmurod.newsapi.buildSrc.Constants
+
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'androidx.navigation.safeargs.kotlin'
+
+}
+
+apply from: "../commons.gradle"
+
+android {
+
+}
+
+dependencies {
+
+    implementation(Libs.Network.moshi)
+    kapt(Libs.Network.moshiKapt)
+
+    implementation(Libs.Network.retrofit)
+    implementation(Libs.Network.retrofit_moshi)
+    implementation(Libs.Paging.paging)
+
+    api(Libs.Room.runtime)
+    api(Libs.Room.ktx)
+    api(Libs.Room.room_paging)
+    kapt(Libs.Room.compiler)
+    implementation 'androidx.paging:paging-common-ktx:3.1.0'
+    implementation project(Constants.Modules.core)
+
+}

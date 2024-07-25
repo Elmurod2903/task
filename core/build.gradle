@@ -1,0 +1,58 @@
+import uz.elmurod.newsapi.buildSrc.Constants
+import uz.elmurod.newsapi.buildSrc.Libs
+
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    compileSdk Constants.Build.compileSdk
+
+    defaultConfig {
+        minSdk Constants.App.minSdk
+        targetSdk Constants.App.targetSdk
+        versionCode Constants.App.versionCode
+        versionName Constants.App.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = Constants.Build.jvmTarget
+    }
+}
+
+dependencies {
+    implementation(Libs.Kotlin.stdlib)
+    implementation(Libs.AndroidX.fragment)
+    implementation(Libs.Material.material)
+    implementation(Libs.Navigation.common)
+    implementation(Libs.Navigation.navigation_fragment)
+    implementation(Libs.navigation_ui)
+    implementation(Libs.AndroidX.window)
+    implementation (Libs.Paging.paging)
+    implementation(Libs.coroutines)
+    implementation(Libs.core)
+    implementation(Libs.glide)
+    implementation(Libs.Kotlin.reflect)
+
+
+
+
+
+
+}
